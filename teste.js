@@ -4,6 +4,7 @@ $scope.fName = '';
 $scope.lName = '';
 $scope.passw1 = '';
 $scope.passw2 = '';
+
 $scope.users = [
 {id:1, fName:'Hege',  lName:"Pege", passw1:"Pege" },
 {id:2, fName:'Kim',   lName:"Pim" },
@@ -31,10 +32,7 @@ $scope.editUser = function(id) {
   }
 };
 
-$scope.$watch('passw1',function() {$scope.test();});
-$scope.$watch('passw2',function() {$scope.test();});
-$scope.$watch('fName', function() {$scope.test();});
-$scope.$watch('lName', function() {$scope.test();});
+
 
 $scope.test = function() {
   if ($scope.passw1 !== $scope.passw2) {

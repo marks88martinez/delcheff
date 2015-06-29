@@ -593,7 +593,7 @@
             
             <td>  
 
-          <button  onclick="ChangeItem(this)" class="btn btn-success btn-xs green "><i class="fa fa-check "></i></button>
+          <button  ng-click="addPreparacion(empleado.id)" onclick="ChangeItem(this)" class="btn btn-success btn-xs green "><i class="fa fa-check "></i></button>
           
             
             </td>
@@ -660,23 +660,16 @@
                       <section class="panel">
                           <div class="panel-body progress-panel">
                               <div class="task-progress">
-                                  <h1>Preparación</h1>
-                                 
+                                  <h1>Preparación</h1>    
                               </div>
-                              <div class="task-option">
-                                  <select class="styled">
-                                      <option>Anjelina Joli</option>
-                                      <option>Tom Crouse</option>
-                                      <option>Jhon Due</option>
-                                  </select>
-                              </div>
+                           
                           </div>
                           <table class="table table-hover personal-task">
                               <tbody>
                               <tr>
-                                  <td>1</td>
-                                  <td>
-                                      Target Sell
+                               <input type="text" ng-model="nombre"  placeholder="Last Name">
+                                  <td ng-model="nombre"></td>
+                                  <td>      
                                   </td>
                                   <td>
                                       <span class="badge bg-important">75%</span>
